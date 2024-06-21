@@ -14,7 +14,7 @@ function addtask(){
         input_box.value = "";
 
     }
-    input_box = "";
+    input_box.value = "";
     saveData();
 }
 
