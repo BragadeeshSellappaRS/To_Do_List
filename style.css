@@ -61,13 +61,63 @@ button{
     outline: none;
     padding: 16px 50px;
     background-color: rgb(111, 224, 255);
-    color: rgb(0, 0, 0);
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 500px;
     cursor: pointer;
+    color: white;
 
 }
 
 button:hover{
     background-color: rgb(0, 225, 255);
+}
+
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url('unchecked.png');
+    top: 12px;
+    left: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+   
+    background-image: url('check.png');
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 35px;
+    height: 38px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+
+}
+
+ul li span:hover{
+    background-color: rgb(210, 210, 210);
 }
